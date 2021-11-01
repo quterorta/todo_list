@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header {
+    padding: 0.5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 25px;
+    align-items: center;
+    background: teal;
+}
+
+.header__logo_container img {
+    width: 50px;
+}
+.header__logo_container a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+.header__logo_container a:hover {
+    color: black;
+}
+
+.header__user_container {
+    text-align: right;
+}
+.header__user_container p {
+    display: inline-block;
+    color: black;
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+}
+.header__user_container a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0px 10px;
+    transition: all 0.15s ease;
+}
+.header__user_container a:hover {
+    box-shadow: inset 0px -2px 0px 0px white;
+}
+
+
+.breadcrumbs li {
+    display: inline;
+    font-size: 1rem;
+}
+.breadcrumbs li a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: inset 0px -3px 0px 0px teal;
+    padding: 1px 3px;
+    transition: all 0.15s ease;
+}
+.breadcrumbs li a:hover {
+    color: white;
+    background-color: teal;
+    box-shadow: inset 0px -5px 0px 0px black;
+}
+.breadcrumbs li a.active {
+    background-color: teal;
+    color: white;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+
+.main_content_block {
+    padding: 2.5%;
+}
+
+.main_content_block__header {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-block;
+    border-bottom: 5px solid teal;
+}
+
+.add_task_block {
+    margin: 20px 0px;
+    padding: 0.5%;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap: 35px;
+}
+
+.add_task_block__form {
+    padding: 0 10%;
+}
+.add_task_block__form h2 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-block;
+    border-bottom: 3px solid teal;
+}
+.add_task_block__form form .form-group label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: teal;
+}
+
+.table tr {
+    transition: all 0.2s ease;
+}
+.table tr:hover {
+    box-shadow: 0px 1px 0px 0px black;
+}
+
+.completed_task {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.table__task_title {
+    color: teal;
+    font-weight: 500;
+}
+
+.table__task_description {
+    color: black;
+    font-weight: 300;
+}
+
+.table__task_control {
+    text-align: right;
+}
+.table__task_control__edit_btn {
+    text-decoration: none;
+    color: teal;
+    font-size: 1.25rem;
+    opacity: 0.5;
+    transition: all 0.175s ease;
+    display: inline-block;
+    margin: 0 5px;
+}
+.table__task_control__edit_btn:hover {
+    opacity: 1;
+}
+
+.table__task_control form {
+    display: inline-block;
+}
+.delete-btn {
+    padding: 0;
+    margin: 0 5px;
+    background: none;
+    border: none;
+    color: red;
+    opacity: 0.5;
+    font-size: 1.25rem;
+    transition: all 0.175s ease;
+}
+.delete-btn:hover {
+    opacity: 1;
+}
+
+.complete-btn {
+    padding: 0;
+    margin: 0 5px;
+    background: none;
+    border: none;
+    color: green;
+    opacity: 0.5;
+    font-size: 1.25rem;
+    transition: all 0.175s ease;
+}
+.complete-btn:hover {
+    opacity: 1;
+}
+
+.uncomplete-btn {
+    padding: 0;
+    margin: 0 5px;
+    background: none;
+    border: none;
+    color: black;
+    opacity: 0.5;
+    font-size: 1.25rem;
+    transition: all 0.175s ease;
+}
+.uncomplete-btn:hover {
+    opacity: 1;
+}
+
+
+
+.edit_task_block {
+    padding: 5% 10% 0 10%;
+}
+
+
+
+.show_task_block {
+    padding: 5%;
+}
+.show_task_block__content {
+    border: 3px solid teal;
+    padding: 25px;
+}
+.show_task_block__content__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: teal;
+}
+.show_task_block__content__description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+}
+.show_task_block__content__controll {
+    text-align: right;
+}
+.show_task_block__content__controll form {
+    display: inline-block;
+}
+.show_task_block__content__controll form button, .show_task_block__content__controll .table__task_control__edit_btn {
+    font-size: 2rem;
+}
